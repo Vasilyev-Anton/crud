@@ -1,0 +1,139 @@
+/* crud/src/index.css */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 40px;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #ffffff;
+  }
+}
+
+.img {
+  width: 40px;
+  display: flex;
+}
+
+.update__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.post__wrapper {
+  border: 1px black solid;
+  resize: none;
+  hyphens: auto;
+  width: 300px;
+  min-height: 150px;
+  position: relative;
+  font-size: 1.5em;
+  margin: 50px 25px;
+}
+
+.post__btn {
+  position: absolute;
+  top: -32px;
+  right: -32px;
+}
+
+.post__list {
+  display: flex;
+}
+
+h2 {
+  font-size: 3.2em;
+  margin-right: 50px;
+  font-weight: 500;
+}
+
+.newCard {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.newCard__btn {
+  position: absolute;
+  top: 170px;
+  left: 340px;
+}
+
+.newCard__btn__block {
+  display: flex;
+}
+
+.newCard__input {
+  width: 400px;
+  height: 150px;
+}
+
+.heading {
+  padding-bottom: 50px;
+  font-size: 1.5em;
+}
+
+#text {
+  resize: none;
+}
