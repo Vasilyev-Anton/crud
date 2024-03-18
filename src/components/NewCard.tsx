@@ -1,3 +1,4 @@
+// crud/src/components/NewCard.tsx
 import { Props } from "./models";
 import CardService from "./CardService";
 import { v4 } from "uuid";
@@ -15,10 +16,12 @@ export default function NewCard({ setCards }: Props) {
             return;
         }
 
-        CardService.create(v4(), textareaValue);
+        await CardService.create(v4(), textareaValue);
         
         setInputValue(""); // Очистить значение поля ввода
         
+        await new Promise(resolve => setTimeout(resolve, 100));
+
         const data = await CardService.getAll();
         setCards(data);
     };
